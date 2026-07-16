@@ -1,0 +1,20 @@
+{
+  "name": "7月16日実施　北陸信越運輸局 個人タクシー法令試験問題",
+  "short_name": "北陸信越法令試験",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#0f4c81",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
