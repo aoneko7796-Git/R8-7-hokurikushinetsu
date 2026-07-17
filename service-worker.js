@@ -5,6 +5,7 @@ const urlsToCache = [
   './style.css',
   './script.js',
   './manifest.webmanifest',
+  './問題演習用PDF.pdf',
   './icon-192.png',
   './icon-512.png'
 ];

@@ -317,3 +317,29 @@ h1 {
     width: 100%;
   }
 }
+
+
+.pdf-download-menu {
+  margin: 0 0 18px;
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid rgba(15, 76, 129, 0.16);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(15, 76, 129, 0.08);
+  text-align: center;
+}
+
+.pdf-download-button {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: #0f4c81;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pdf-download-button:hover,
+.pdf-download-button:focus {
+  opacity: 0.9;
+}

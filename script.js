@@ -211,7 +211,7 @@ const articleHtml = `
   <p>第四条　一般旅客自動車運送事業者は、運賃及び料金並びに運送約款を営業所に <span id="blank-36"></span> した後でなければ、これを実施してはならない。</p>
   <p>２　（略）</p>
   <p>３　一般乗用旅客自動車運送事業者は、 <span id="blank-37"></span> が定めるところにより、事業用自動車（運送の引受けが営業所のみにおいて行われているものを除く。）に運賃及び料金に関する事項を <span id="blank-38"></span> 及び事業用自動車を利用する <span id="blank-39"></span> に見やすいように表示しなければならない。</p>
-  <p>４　一般乗用旅客自動車運送事業者は、運賃又は料金が <span id="blank-40"></span> による場合を除き、（2番目の空欄）が定めるところにより、運賃及び料金の額を事業用自動車内において事業用自動車を利用する（4番目の空欄）に見やすいように表示しなければならない。</p>
+  <p>４　一般乗用旅客自動車運送事業者は、運賃又は料金が <span id="blank-40"></span> による場合を除き、 <span id="blank-37-display"></span> が定めるところにより、運賃及び料金の額を事業用自動車内において事業用自動車を利用する <span id="blank-39-display"></span> に見やすいように表示しなければならない。</p>
 `;
 
 const TOTAL_QUESTIONS = trueFalseQuestions.length + fillQuestions.length;
@@ -303,6 +303,16 @@ function render() {
     const target = document.getElementById(`blank-${question.number}`);
     if (target) target.appendChild(createSelect(question));
   });
+
+  const display37 = document.getElementById("blank-37-display");
+  if (display37) {
+    display37.textContent = answers[37] ? getWord(answers[37]) : "B";
+  }
+
+  const display39 = document.getElementById("blank-39-display");
+  if (display39) {
+    display39.textContent = answers[39] ? getWord(answers[39]) : "D";
+  }
 
   const controlSection = document.createElement("section");
   controlSection.className = "bottom-actions";
